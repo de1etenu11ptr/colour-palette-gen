@@ -10,3 +10,5 @@ Colour Schemes (Can be seen implemented here [colour-generation.js](/src/utility
 * Split Complementary
 * Triadic
 * Tetradic
+
+> More: [Wiki Article on Colour Schemes](https://en.wikipedia.org/wiki/Color_scheme)
