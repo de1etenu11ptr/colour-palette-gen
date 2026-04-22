@@ -1,0 +1,141 @@
+.chromatic-palette {
+	width: 100%;
+	max-width: 56rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	margin-bottom: 2rem;
+}
+
+.chromatic-colour-card {
+	position: relative;
+	height: 6rem;
+	border-radius: 0.75rem;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	transform-origin: center;
+}
+
+.chromatic-colour-card:hover {
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+	transform: scale(1.05);
+}
+
+.chromatic-card-overlay {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0);
+	transition: all 0.3s ease;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem;
+	pointer-events: auto;
+}
+
+.chromatic-colour-card:hover .chromatic-card-overlay {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.chromatic-colour-info {
+	text-align: left;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.chromatic-colour-card:hover .chromatic-colour-info {
+	opacity: 1;
+}
+
+.chromatic-colour-name {
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.chromatic-colour-hex {
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+.chromatic-card-actions {
+	display: flex;
+	gap: 0.75rem;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	z-index: 99;
+}
+
+.chromatic-colour-card:hover .chromatic-card-actions {
+	opacity: 1;
+}
+
+.chromatic-lock-btn {
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.chromatic-lock-btn:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.chromatic-lock-btn.locked {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.chromatic-lock-icon {
+	width: 1.25rem;
+	height: 1.25rem;
+	fill: currentColor;
+}
+
+.chromatic-copy-btn {
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.chromatic-copy-btn:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.chromatic-copy-icon {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.chromatic-copy-icon-success {
+	color: #4ade80;
+}
+
+.chromatic-card-display {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.3s ease;
+}
+
+.chromatic-colour-card:hover .chromatic-card-display {
+	opacity: 0;
+}
+
+.chromatic-hex-text {
+	font-family: monospace;
+	font-size: 0.875rem;
+}
